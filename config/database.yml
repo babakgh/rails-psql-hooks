@@ -57,3 +57,5 @@ production:
   pool: 5
   host: localhost
   port: 5432
+  username: jack
+  password: jill
