@@ -1,5 +1,5 @@
 production:
-  first_thing:
+  last_thing:
     - source: /.cloud66/files/time.sh
       destination: /tmp/time.sh
       target: rails
