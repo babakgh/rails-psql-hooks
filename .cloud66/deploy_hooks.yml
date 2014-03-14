@@ -5,7 +5,7 @@ production:
       target: any
       execute: true
   first_thing:
-    - command: nano /tmp/command_works_yay.txt
+    - command: touch /tmp/command_works_yay.txt
       target: any
 
       
