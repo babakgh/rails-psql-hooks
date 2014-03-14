@@ -2,25 +2,10 @@ production:
   first_thing:
     - source: /.cloud66/files/sample_script.sh
       destination: ~/sample_script.sh
-      target: rails
+      target: any
       execute: true
-      run_on: all_servers
-      apply_during: build_only
-
-development:
   first_thing:
-    - source: /.cloud66/files/sample_script.sh
-      destination: ~/sample_script.sh
-      target: rails
-      execute: true
-      run_on: all_servers
-      apply_during: build_only
+    - command: nano /tmp/command_works_yay.txt
+      target: any
 
-staging:
-  first_thing:
-    - source: /.cloud66/files/sample_script.sh
-      destination: ~/sample_script.sh
-      target: rails
-      execute: true
-      run_on: all_servers
-      apply_during: build_only
+      
