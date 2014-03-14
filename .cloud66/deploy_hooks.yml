@@ -4,7 +4,6 @@ production:
       destination: ~/sample_script.sh
       target: any
       execute: true
-  first_thing:
     - command: touch /tmp/command_works_yay.txt
       target: any
 
