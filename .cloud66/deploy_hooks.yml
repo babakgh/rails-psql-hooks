@@ -11,3 +11,6 @@ production:
   after_symlink:
     - command: touch /tmp/after_symlink_command.txt
       target: any      
+  after_postgresql:
+    - command: touch /tmp/after_postgresql_command.txt
+      target: any   
