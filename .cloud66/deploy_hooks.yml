@@ -1,29 +1,13 @@
 production:
   first_thing:
-    - source: /.cloud66/files/first_thing_source.sh
-      destination: /tmp/first_thing_source.sh
-      target: rails
-      execute: true
     - command: touch /tmp/first_thing_command.txt
       target: any
   after_checkout:
-    - source: /.cloud66/files/after_checkout_source.sh
-      destination: /tmp/after_checkout_source.sh
-      target: rails
-      execute: true
     - command: touch /tmp/after_checkout_command.txt
       target: any
   after_bundle:
-    - source: /.cloud66/files/after_bundle_source.sh
-      destination: /tmp/after_bundle_source.sh
-      target: rails
-      execute: true
     - command: touch /tmp/after_bundle_command.txt
       target: any      
   after_symlink:
-    - source: /.cloud66/files/after_symlink_source.sh
-      destination: /tmp/after_symlink_source.sh
-      target: rails
-      execute: true
     - command: touch /tmp/after_symlink_command.txt
       target: any      
