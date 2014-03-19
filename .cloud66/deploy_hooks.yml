@@ -1,9 +1,8 @@
 production:
-  last_thing:
+  first_thing:
     - source: /.cloud66/files/time.sh
-      destination: /tmp/time.sh
+      destination: /root/deploy_hooks/tim.sh
       target: rails
-      apply_during: build_only
+      apply_during: all
       execute: true
-      run_on: single_server
       sudo: true
