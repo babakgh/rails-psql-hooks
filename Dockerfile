@@ -8,6 +8,6 @@ WORKDIR $APP_HOME
 
 ADD Gemfile* $APP_HOME/
 RUN bundle install
-RUN gem install thin
+RUN bundle exec gem install thin
 
 ADD . $APP_HOME
