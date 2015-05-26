@@ -57,6 +57,4 @@ production:
   username: <%= ENV['POSTGRESQL_USERNAME'] %>
   password: <%= ENV['POSTGRESQL_PASSWORD'] %>
   host: <%= ENV['POSTGRESQL_ADDRESS'] %>  
-  pool: 5
-  host: localhost
   port: 5432
